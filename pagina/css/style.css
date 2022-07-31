@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  width: 100%;
+  padding: 20px;
+  background: #29184A;
+  box-sizing: border-box;
+  display: block;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.header .header-img {
+  width: 150px;
+}
+.header .header-nav {
+  float: right;
+  margin-top: 20px;
+}
+.header .header-nav ul {
+  list-style: none;
+}
+.header .header-nav ul li {
+  display: inline-block;
+  padding: 20px;
+}
+.header .header-link {
+  color: #0EAFD2;
+  font-size: 1.5em;
+  position: absolute;
+  transition: all 0.9s;
+}
+.header .header-link:hover {
+  margin-top: -5px;
+}
+
+.banner {
+  text-align: center;
+}
+.banner .banner-text {
+  font: 2em Quicksand, Arial, Tahoma;
+  text-align: center;
+  line-height: 30px;
+  color: #0EAFD2;
+  margin: 25px 0px;
+}
+
+body {
+  background: url(../imagens/bg.jpg) no-repeat fixed;
+}
+
+.btn {
+  font: 1em Quicksand, Arial, Tahoma;
+  text-align: center;
+  line-height: 20px;
+  color: #29184A;
+  background: #0EAFD2;
+  text-decoration: none;
+  padding: 20px;
+  margin: 20px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.5s;
+}
+.btn:hover {
+  background: #df61ca;
+}
+
+section {
+  padding: 50px 0;
+}
+
+.container {
+  width: 1000px;
+  margin: auto;
+}
+
+.definicao-sass {
+  background: #1E0F3C;
+}
+.definicao-sass .definicao-sass-img {
+  width: 150px;
+  border-radius: 100%;
+  float: left;
+  margin: 20px;
+}
+.definicao-sass h1 {
+  font: 2em Quicksand, Arial, Tahoma;
+  text-align: center;
+  line-height: 30px;
+  color: #0EAFD2;
+  font-weight: bold;
+}
+.definicao-sass p {
+  font: 1.2em Quicksand, Arial, Tahoma;
+  text-align: justify;
+  line-height: 30px;
+  color: #FFF;
+  margin: 20px;
+}
+
+.sobre-mim {
+  background: #0EAFD2;
+}
+.sobre-mim .sobre-mim-img {
+  width: 150px;
+  border-radius: 100%;
+  float: left;
+  margin: 20px;
+}
+.sobre-mim h1 {
+  font: 2em Quicksand, Arial, Tahoma;
+  text-align: center;
+  line-height: 20px;
+  color: #29184A;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+.sobre-mim p {
+  font: 1.2em Quicksand, Arial, Tahoma;
+  text-align: justify;
+  line-height: 30px;
+  color: #FFF;
+  margin: 20px;
+}
+
+.footer {
+  text-align: center;
+  padding: 30px;
+}
+.footer p a {
+  font: 0.8em Quicksand, Arial, Tahoma;
+  text-align: center;
+  line-height: 30px;
+  color: #de72cc;
+  text-decoration: none;
+}
+.footer .footer-img {
+  width: 150px;
+}/*# sourceMappingURL=style.css.map */

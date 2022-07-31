@@ -1,0 +1,33 @@
+$primary: #333;
+$secondary:#665;
+$colorLinkLinkedin: rgb(86, 255, 89);
+$font: verdana;
+
+
+main {
+    h1 {
+        font: 2em $font;
+        color:$primary;
+    }
+    p{
+        font: 1.2em $font;
+        color: $secondary;
+    }
+}
+
+div {
+    h1 {
+        font: 2em $font;
+        color: $primary;
+    }
+    p {
+        font: 1.2em $font; 
+    }
+    a {
+        text-decoration: none;
+
+        &:hover {
+            color: $colorLinkLinkedin;
+        }
+    }
+}

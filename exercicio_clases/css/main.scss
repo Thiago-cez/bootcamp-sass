@@ -1,0 +1,11 @@
+$primary: #333;
+$secondary: #ccc;
+
+.header {
+    font: 3em Arial; 
+    
+    // & - repete a ultima classe inserida; no exemplo a baixo é o header!
+    & &-logo{
+        color: $secondary;
+    }
+}

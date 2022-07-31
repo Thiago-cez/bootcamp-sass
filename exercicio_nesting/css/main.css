@@ -1,0 +1,22 @@
+main h1 {
+  font: 2em verdana;
+  color: #333;
+}
+main p {
+  font: 1.2em verdana;
+  color: #665;
+}
+
+div h1 {
+  font: 2em verdana;
+  color: #333;
+}
+div p {
+  font: 1.2em verdana;
+}
+div a {
+  text-decoration: none;
+}
+div a:hover {
+  color: rgb(86, 255, 89);
+}/*# sourceMappingURL=main.css.map */

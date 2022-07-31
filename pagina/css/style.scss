@@ -1,0 +1,159 @@
+$primary: #29184A;
+$secondary: #0EAFD2;
+$dark: #1E0F3C;
+$clear:#FFF;
+$padding: 20px;
+$font: Quicksand, Arial, Tahoma;
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@mixin formatacao-texto($font,$size,$aling,$line,$color){
+    font:$size $font;
+    text-align: $aling;
+    line-height: $line;
+    color: $color;
+}
+
+.header {
+    width: 100%;
+    padding: $padding;
+    background: $primary;
+    box-sizing: border-box;
+    display: block;
+  flex-direction:column;
+  flex-wrap: wrap;
+    
+
+    & &-img{
+        width: 150px;
+    }
+
+    & &-nav{
+        float: right;
+        margin-top: $padding;
+        ul{
+            list-style: none;
+            
+            li {
+                 display: inline-block;
+                 padding: $padding;
+
+            }
+        }
+    }
+    & &-link{
+        color: $secondary;
+        font-size: 1.5em;
+        position: absolute;
+        transition: all 0.9s;
+        &:hover {
+            margin-top: -5px;
+        }
+    }
+}
+
+.banner {
+    text-align: center;
+    
+
+    & &-text{
+        @include formatacao-texto($font,2em,center,30px,$secondary);
+        margin: 25px 0px;
+    }
+}
+
+body {
+    background: url(../imagens/bg.jpg) no-repeat fixed;
+}
+
+.btn {
+    @include formatacao-texto($font,1em,center,20px,$primary );
+    background: $secondary;
+    text-decoration: none;
+    padding: $padding;
+    margin: $padding;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all 0.5s;
+  
+    &:hover{
+        background: #df61ca;
+        
+    }
+}
+
+section {
+    
+    padding: 50px 0;
+}
+
+.container {
+    width: 1000px;
+    margin: auto;
+}
+
+.definicao-sass{
+
+    background: $dark;
+
+    & &-img{
+        width: 150px;
+        border-radius: 100%;
+        float: left;
+        margin: $padding;
+       
+    }
+
+    h1 {
+        @include formatacao-texto($font,2em,center,30px,$secondary);
+        font-weight: bold;
+    }
+    
+    p{
+        @include formatacao-texto($font,1.2em, justify,30px ,$clear );
+        margin: $padding;
+    }
+}
+
+.sobre-mim{
+    background: $secondary;
+
+    & &-img{
+        width: 150px;
+        border-radius: 100%;
+        float: left;
+        margin: $padding;
+       
+    }
+
+    h1{
+        @include formatacao-texto($font,2em,center,20px,$primary );
+        font-weight: bold;
+        margin-bottom: 50px;
+        
+    }
+    p{
+        @include formatacao-texto($font,1.2em,justify,30px,$clear);
+         margin: $padding;
+    }
+}
+
+
+.footer{
+       text-align: center;
+       padding: 30px;
+    p{
+        a{
+           @include formatacao-texto($font,0.8em,center,30px,#de72cc);
+           text-decoration: none;
+         }
+    }
+
+    & &-img{
+        width: 150px;
+    }
+} 
+
