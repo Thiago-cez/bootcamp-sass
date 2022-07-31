@@ -139,4 +139,12 @@ section {
 }
 .footer .footer-img {
   width: 150px;
+}
+
+@media (max-width: 420px) {
+  .container {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
 }/*# sourceMappingURL=style.css.map */
